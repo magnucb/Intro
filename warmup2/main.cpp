@@ -1,41 +1,39 @@
+#include<iostream>
 #include<math.h>
 #include<stdio.h>
 
-int f(float x)
-{
+float f(float x){
     float result;
     result = arctan(x);
     return result;
 }
 
-int derfana(float x)
-{
+float derfana(float x){
     float result;
     result = 1/(1+pow(x, 2.0))
 }
 
-
-int derf2c(float x, float h)
-{
+float derf2c(float x, float h){
     float result;
     result = (f(x+h) - f(x))/h;
     return result;
 }
 
-int derf3c(float x, float h)
-{
+float derf3c(float x, float h){
     float result;
     result (f(x+h) - f(x-h))/(2.0*h);
     return result
 }
 
+int main(){
+    float hvector = new float[num]; // creates a dynamic vector
+    h0 = 1.0;
+    hN = 1e-18;
+    c = pow(h0/hN, 1.0/num);        // iterative constant for h-size
+    hvector[0] = h0;
 
-
-
-int main()
-{
-    float x, h;
-
+    for (int i = 0; i<num; i++) {   // syntax for for-loops
+        hvector[i+1] = h[i]/c
+    }
     return 0;
 }
-
